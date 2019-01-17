@@ -1,0 +1,25 @@
+<root>
+    <styles>
+        <include src="s2r://panorama/styles/dotastyles.vcss_c" />
+        <include src="file://{resources}/styles/hud/game.css" />
+        <include src="s2r://panorama/styles/hud/dota_hud_stat_branch.vcss_c" />	
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/Players.js" />
+        <include src="file://{resources}/scripts/hud/game.js" />
+    </scripts>
+    <Panel class="HudRoot" hittest="false">
+        <Panel id="HudRoot" hittest="false">
+            <Panel id="Score" hittest="false">
+               <ProgressBar id="XPProgress" onactivate="DOTAHUDXPBarClicked();" min="0" max="100" value="100" >
+			        <Label id="XPLabel" text="#DOTA_Hud_XP" hittest="false" />
+		        </ProgressBar>
+
+                <Label id="Damage" class="Attribute" text="Hulk's Damage: 52" hittest="false" />
+                <Label id="Armor" class="Attribute" text="Hulk's Armor: 52" hittest="false" />
+
+                <Label id="Waves" text="Wave #1" hittest="false" />
+            </Panel>
+        </Panel>
+    </Panel>
+</root>

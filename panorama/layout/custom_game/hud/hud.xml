@@ -1,0 +1,92 @@
+<root>
+    <styles>
+        <include src="s2r://panorama/styles/dotastyles.vcss_c" />
+        <include src="file://{resources}/styles/hud/hud.css" />
+        <include src="s2r://panorama/styles/hud/dota_hud_stat_branch.vcss_c" />	
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/Players.js" />
+        <include src="file://{resources}/scripts/hud/hud.js" />
+    </scripts>
+    <Panel class="HudRoot" hittest="false">
+        <Panel id="HudRoot" hittest="false">
+            <Panel id="Center" hittest="false">
+               <Label id="DiscoverText" class="Hidden" text="" />
+               <Label id="EscapeText" class="Hidden" text="Escape in 3 sec" />
+            </Panel>
+            <Panel id="ExpPanel" hittest="false">
+               <Label id="ExpText" text="" />
+            </Panel>           
+            <Button id="OpenButton" class="Button" onactivate="OnOpenBook()">
+                <Label text="BOOK" />
+            </Button>
+            <Panel id="Book" class="Hidden" hittest="true">
+                <Panel id="Book_Left" hittest="true">
+                    <DOTAAvatarImage id="PlayerAvatar"/>
+                    <Panel id="PlayerNameContainer">
+                         <Label id="PlayerName" tabindex="auto" text="Player" />
+                         <Label id="PlayerExp" tabindex="auto" text="Points: 120" />
+                         <Label id="PlayerWins" tabindex="auto" text="Wins: 1" />
+                         <Label id="PlayerDeaths" tabindex="auto" text="Deaths: 1" />
+                    </Panel>
+                    <Image class="Item" src="file://{images}/econs/red_pearl.png">
+                            <Label class="Price" text="PRICE: 8000 POINTS" />
+                            <Button class="Treassure" onactivate="BuyItem('216')">
+                                <Label text="Buy THE RED PEARL" />
+                            </Button>
+                    </Image>
+                    <Panel id="ItemsPanel">
+                         <DOTAItemImage  hittest="true" class="GameItem" itemname="item_smoke_of_deceit">
+                            <Button class="GameItemButton" onactivate="BuyGameItem({item: 'item_smoke_of_deceit', price: '100'})">
+                                <Label text="100 EP" />
+                            </Button>
+                         </DOTAItemImage>
+                          <DOTAItemImage  hittest="true" class="GameItem" itemname="item_ward_observer">
+                            <Button class="GameItemButton" onactivate="BuyGameItem({item: 'item_ward_observer', price: '100'})">
+                                <Label text="100 EP" />
+                            </Button>
+                         </DOTAItemImage>
+                          <DOTAItemImage hittest="true" class="GameItem" itemname="item_tpscroll">
+                            <Button class="GameItemButton" onactivate="BuyGameItem({item: 'item_tpscroll', price: '300'})">
+                                <Label text="300 EP" />
+                            </Button>
+                         </DOTAItemImage>
+                         <DOTAItemImage hittest="true" class="GameItem" itemname="item_courier">
+                            <Button class="GameItemButton" onactivate="BuyGameItem({item: 'item_courier', price: '500'})">
+                                <Label text="500 EP" />
+                            </Button>
+                         </DOTAItemImage>
+                    </Panel>
+                     <Panel id="Heroes">
+                        <Image class="Hero" src="file://{images}/event/heroes/palladin.png">
+                            <Label class="Price" text="PRICE: 1500 POINTS" />
+                            <Button id="PalladinButton" class="HeroButton" onactivate="OnBuyHero('1')">
+                                <Label id="PlladinLabel" text="Buy PALLADIN" />
+                            </Button>
+                        </Image>
+            
+                        <Image class="Hero" src="file://{images}/event/heroes/warrior.png">
+                            <Label class="Price" text="PRICE: 3000 POINTS" />
+                            <Button id="WarriorButton" class="HeroButton" onactivate="OnBuyHero('3')">
+                                <Label id="WarriorLabel" text="Buy WARRIOR" />
+                            </Button>
+                        </Image>
+
+                        <Image class="Hero" src="file://{images}/event/heroes/archer.png">
+                            <Label class="Price" text="PRICE: 5000 POINTS" />
+                            <Button id="ArcherButton" class="HeroButton" onactivate="OnBuyHero('2')">
+                                <Label id="ArcherLabel" text="Buy ARCHER" />
+                            </Button>
+                         </Image>
+                    </Panel>
+                </Panel>
+                <Panel id="Book_Right" hittest="true">
+                    <Image id="Map" src="file://{images}/event/map.psd" />
+                    <Image src="file://{images}/event/badge-active.png" />
+                    <Image id="Clip" src="file://{images}/event/clip.png" />
+                    <Label id="EventText" text="Event_About" />
+                </Panel>
+            </Panel>
+        </Panel>
+    </Panel>
+</root>

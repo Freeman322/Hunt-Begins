@@ -1,0 +1,1 @@
+if not item_trophy then item_trophy = class({}) end 

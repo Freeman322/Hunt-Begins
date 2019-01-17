@@ -1,0 +1,86 @@
+.HudRoot{
+    width: 100%;
+    height: 100%;
+}
+
+#HudRoot{
+    width: 100%;
+	height: 100%;
+}
+
+#Score{
+    width: 244px;
+    height: 124px;
+    
+    background-color: #000000cc;
+
+    flow-children: down;
+
+    horizontal-align: left;
+    vertical-align: bottom;
+
+    margin-bottom: 22.5%;
+}
+
+ProgressBar
+{
+	border: 0px;
+	border-radius: 0px;
+	background-color: #000000ff;
+	box-shadow: none;
+	margin-left: 1px;
+    margin-right: 1px;
+    
+    horizontal-align: center;
+
+    width: 90%;
+    margin-top: 30px;
+}
+
+ProgressBar > Label
+{
+    color: #528EA5;
+    horizontal-align: center;
+}
+
+ProgressBar .ProgressBarLeft
+{
+	border-radius: 0px;
+	background-color: red;
+}
+
+#MultiUnitHotkey
+{
+	color: white;
+	font-size: 14px;
+	padding-left: 1px;
+}
+
+.Attribute{
+    color: #528EA5;
+    font-size: 14px;
+    padding: 3px 8px 1px 12px;
+
+    text-shadow: 0px 0px 8px 2.0 #000000;
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+    font-weight: medium;
+}
+
+#Waves
+{
+    color: #528EA5;
+    font-size: 16px;
+    padding: 3px 8px 1px 12px;
+
+    text-shadow: 0px 0px 8px 2.0 #000000;
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+    font-weight: medium;
+
+    margin-top: 2px;
+
+    horizontal-align: center;
+}

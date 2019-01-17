@@ -1,0 +1,114 @@
+
+//default
+//day
+
+"ambient"
+{
+	"dsp"       "0"
+	"fadetime" "3"
+
+	"playlooping"
+	{
+		"volume"	".2"
+		"pitch"		"10"
+		"wave"		"sounds/ambient/soundscapes/light_rain_lp.vsnd"
+		"origin"	"-7368.421387, -6868.223145, 629.063049;"
+		"soundlevel" 	"SNDLVL_84dB"
+	}
+
+	"playlooping"
+	{
+		"volume"	".4"
+		"pitch"		"10"
+		"wave"		"sounds/ambient/soundscapes/light_rain_lp.vsnd"
+		"origin"	"-5857.519531, -5318.322266, 611.078918;"
+		"soundlevel" 	"SNDLVL_81dB"
+	}
+
+	"playlooping"
+	{
+		"volume"	".86"
+		"pitch"		"10"
+		"wave"		"sounds/ambient/soundscapes/light_rain_lp.vsnd"
+		"origin"	"6995.042969, 6946.560547, 759.680054;"
+		"soundlevel" 	"SNDLVL_84dB"
+	}
+
+	"playlooping"
+	{
+		"volume"	".3"
+		"pitch"		"10"
+		"wave"		"sounds/ambient/soundscapes/light_rain_lp.vsnd"
+		"origin"	"5532.716309, 5012.856445, 480.763458;"
+		"soundlevel" 	"SNDLVL_79dB"
+	}
+
+	"playlooping"
+	{
+		"volume"	".3"
+		"pitch"		"10"
+		"wave"		"sounds/ambient/soundscapes/light_rain_lp.vsnd"
+		"origin"	"-7027.195801, 2953.811279, 847.728455;"
+		"soundlevel" 	"SNDLVL_84dB"
+	}
+
+	"playlooping"
+	{
+		"volume"	".3"
+		"pitch"		"10"
+		"wave"		"sounds/ambient/soundscapes/light_rain_lp.vsnd"
+		"origin"	"-4980, 2815, 128;"
+		"soundlevel" 	"SNDLVL_81dB"
+	}
+
+	"playlooping"
+	{
+		"volume"	".3"
+		"pitch"		"10"
+		"wave"		"sounds/ambient/soundscapes/light_rain_lp.vsnd"
+		"origin"	"4370, -2900, 128;"
+		"soundlevel" 	"SNDLVL_81dB"
+	}
+
+	"playlooping"
+	{
+		"volume"	".3"
+		"pitch"		"10"
+		"wave"		"sounds/ambient/soundscapes/light_rain_lp.vsnd"
+		"origin"	"7100, -2850, 128"
+		"soundlevel" 	"SNDLVL_81dB"
+	}
+
+	"playlooping"
+	{
+		"volume"	".5"
+		"pitch"		"10"
+		"wave"		"sounds/ambient/soundscapes/light_rain_lp.vsnd"
+		"origin"	"-2500, 1910, 160;"
+		"soundlevel" 	"SNDLVL_81dB"
+	}
+
+
+	"playsoundscape"
+	{
+		"name" "weather_day_default"
+		"volume" "1"
+	}
+}
+
+thunder_day
+{
+	"dsp"       "0"
+	"fadetime" 	"3"
+
+	"playlooping"
+	{
+		"volume"	"1"
+		"pitch"		"10"
+		"wave"		"sounds/ambient/soundscapes/rain_thunder01.vsnd"
+		"origin"	"4795.96, 12288, 128;"
+		"soundlevel" 	"SNDLVL_84dB"
+	}
+}
+
+
